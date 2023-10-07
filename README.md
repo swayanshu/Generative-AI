@@ -63,6 +63,7 @@ plt.show()
 
 - The generative AI model consistently produced coherent and contextually relevant text based on user prompts. The quality of the generated text was assessed through a combination of perplexity scores and qualitative analysis.
 - Word Cloud Visualization: The word cloud visualization highlighted frequently occurring words in the generated text, providing an insightful view of the text's content
+- Perplexity Score: An indicator of strong adherence to the language model's expectations and fluency
 
 ## Model Output
 ```ruby
