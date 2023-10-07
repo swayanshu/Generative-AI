@@ -73,3 +73,16 @@ The term self supervised learning is used to describe learning that is not depen
 ```
 
 ![](/Images/r.png)
+## Perplexity
+```ruby
+from transformers import AutoModelForCausalLM, AutoTokenizer
+model = AutoModelForCausalLM.from_pretrained("gpt2")
+tokenizer = AutoTokenizer.from_pretrained("gpt2")
+inputs = tokenizer("what is self supervised learning is used to describe learning that is not dependent on external resources. It is a learning process that can be performed by a single individual or group of individuals.", return_tensors = "pt")
+loss = model(input_ids = inputs["input_ids"], labels = inputs["input_ids"]).loss
+ppl = torch.exp(loss)
+print(ppl)
+
+Output:
+tensor(20.6831, grad_fn=<ExpBackward0>)
+```
