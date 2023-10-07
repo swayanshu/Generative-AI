@@ -1,17 +1,17 @@
-# Text Generation Using Generative AI
+# Text Generation with GPT-2
 
-# Project Description:
+## Project Description:
 
 Explore the capabilities of generative AI models for text generation using the GPT-2 model from the Hugging Face Transformers library. The project aimed to generate coherent and creative text based on user-provided prompts and assess the quality of the generated text.
 
-# Methods:
+## Methods:
 
 1. Model Selection: I selected the GPT-2 model and configured it for text generation.
 2. Text Generation: Developed a Python program that allowed users to input prompts, and the model generated text based on those prompts.
 3. Analysis: I used perplexity as a metric to evaluate the generated text's quality. I also assessed the generated text qualitatively for coherence and relevance.
 4. Visualization: To enhance the user experience, I incorporated word cloud visualization of frequently occurring words in the generated text.
 
-# Model:
+## Model:
 
 ```ruby
 import torch
@@ -59,7 +59,17 @@ plt.title("Word Cloud of Generated Text")
 plt.show()
 ```
 
-# Results:
+## Results:
 
 - The generative AI model consistently produced coherent and contextually relevant text based on user prompts. The quality of the generated text was assessed through a combination of perplexity scores and qualitative analysis.
 - Word Cloud Visualization: The word cloud visualization highlighted frequently occurring words in the generated text, providing an insightful view of the text's content
+
+## Model Output
+```ruby
+Generated Text:
+what is self supervised learning?
+
+The term self supervised learning is used to describe learning that is not dependent on external resources. It is a learning process that can be performed by a single individual or group of individuals.
+```
+
+![](/Images/r.png)
